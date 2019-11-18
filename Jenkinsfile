@@ -14,10 +14,10 @@ pipeline {
           sh 'node --version'
         }
       }
-    }
     stage ('Just messing around...') {
       echo 'Howdy'
       echo "You're a wizard, Harry!"
+    }
     }
   }
 }
