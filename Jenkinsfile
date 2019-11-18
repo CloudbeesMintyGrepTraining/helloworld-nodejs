@@ -12,7 +12,7 @@ pipeline {
     stage('Just messing around') { 
       steps {
         echo "You're a wizard, Harry!"
-        echo
+        echo ''
         echo "Don't worry. You're just as sane as I am."
       }
     }
