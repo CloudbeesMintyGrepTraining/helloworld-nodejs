@@ -1,7 +1,8 @@
 pipeline {
-  agent any
+  agent none
   stages {
     stage('Say Hello') {
+      agent { label 'nodejs-app' }
       steps {
         echo 'Hello World!'   
         sh 'java -version'
@@ -10,6 +11,7 @@ pipeline {
       }
     }
     stage('Just messing around') { 
+      agent { label 'nodejs-app' }
       steps {
         echo "You're a wizard, Harry!"
         echo ''
