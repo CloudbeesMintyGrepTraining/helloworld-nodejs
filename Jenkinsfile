@@ -9,5 +9,12 @@ pipeline {
         sh 'touch test_file; echo $(date +%F) >> test_file; cat test_file'
       }
     }
+    stage('Just messing around') { 
+      steps {
+        echo "You're a wizard, Harry!"
+        echo
+        echo "Don't worry. You're just as sane as I am."
+      }
+    }
   }
 }
